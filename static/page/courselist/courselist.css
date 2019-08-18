@@ -1,0 +1,987 @@
+.pr {
+    position: relative;
+}
+.mod-chapters * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.course-infos,
+.content,
+.aside {
+    padding: 0 15px;
+}
+.content {
+    margin-bottom: 20px;
+}
+.course-infos {
+    position: relative;
+}
+.info-bg {
+    background-color: #172a34;
+}
+.w {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.course-infos .w {
+    z-index: 1;
+    padding: 40px 0;
+}
+.path, .path a,
+.path span {
+    color: #fff;
+}
+.path {
+    opacity: .6;
+    font-size: 12px;
+}
+.course-infos .path,
+.course-infos .path a,
+.course-infos .path span {
+    color: rgba(255,255,255,.5);
+}
+.course-infos .path {
+    padding-top: 16px;
+    padding-bottom: 32px;
+    line-height: 12px;
+    font-size: 12px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.path .path-split, i {
+    font-style: normal;
+}
+.path .path-split {
+    margin: 0 10px 0 8px;
+}
+.course-infos h2 {
+    margin: 0;
+    margin-bottom: 32px;
+    line-height: 1.3;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+}
+.course-infos .statics {
+    color: #fff;
+    font-size: 0;
+    white-space: nowrap;
+}
+.course-infos .learn-btn {
+    position: relative;
+    margin-right: 36px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 16px 12px 16px 24px;
+    font-weight: 700;
+    font-family: "微软雅黑";
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-color: #0b6fb5;
+}
+.course-infos .learn-btn:hover {
+    background-color: #298fd6;
+}
+.course-infos .learn-btn a {
+    color: #fff;
+    margin-right: 12px;
+}
+.course-infos .learn-btn em {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 99px;
+    top: 16px;
+    height: 16px;
+    width: 1px;
+    background-color: rgba(255,255,255,.8);
+    zoom: 1;
+}
+.course-infos .learn-btn .follow-action {
+    margin-left: 8px;
+}
+.course-infos .statics .static-item {
+    display: inline-block;
+    position: relative;
+    padding: 0 36px;
+    height: 48px;
+    font-size: 12px;
+    top: 6px;
+}
+.course-infos .statics .static-item:nth-child(2) {
+    padding-left: 0;
+}
+.course-infos .statics .static-item .meta {
+    display: block;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    line-height: 12px;
+    font-size: 12px;
+}
+.course-infos .statics .static-item .meta-value {
+    display: block;
+    margin-top: 10px;
+    opacity: .7;
+    font-size: 16px;
+    line-height: 16px;
+    filter: alpha(opacity=70);
+}
+.course-infos .statics .static-item .smale-value {
+    line-height: 12px;
+    font-size: 12px;
+    max-width: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.course-infos .statics .score-btn {
+    cursor: pointer;
+}
+.course-infos .statics .static-item em {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 36px;
+    width: 1px;
+    background-color: rgba(147,153,159,.4);
+    zoom: 1;
+}
+.course-infos .statics .static-item .score-wrap {
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 27px;
+    color: #fff;
+    font-size: 46px;
+    z-index: 1;
+}
+.course-infos .statics .score-btn:hover .score-wrap {
+    display: block;
+}
+.course-infos .statics .static-item .score-wrap .score-box {
+    position: absolute;
+    top: 24px;
+    left: -105px;
+    padding: 24px;
+    background: #fff;
+    color: #71777d;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(7,17,27,.1);
+    font-family: "Microsoft YaHei";
+}
+.course-infos .statics .static-item .score-wrap .score-box .person-num {
+    font-size: 14px;
+    color: #07111b;
+}
+.course-infos .statics .static-item .score-wrap .score-box .person-num {
+    font-size: 14px;
+    color: #07111b;
+}
+.course-infos .statics .static-item .score-wrap .score-box .evaluation-btn {
+    font-size: 14px;
+    color: #ff7802;
+    font-weight: 700;
+    cursor: pointer;
+}
+.course-infos .statics .static-item .score-wrap .score-box .score-detail-box {
+    margin-top: 16px;
+}
+.course-infos .statics .static-item .score-wrap .score-box .score-detail-box .score-static-item {
+    margin-top: 16px;
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+}
+.course-infos .statics .static-item .score-wrap .score-box .score-detail-box .score-static-item:nth-child(1) {
+    padding-left: 0;
+}
+.course-infos .statics .static-item .score-wrap .score-box .score-detail-box .score-static-item span {
+    margin-top: 0;
+}
+.course-infos .statics .static-item .score-wrap .score-box .score-detail-box .score-static-item .meta-value {
+    color: #07111b;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    opacity: 1;
+}
+.course-infos .statics .static-item .score-wrap .score-box .score-detail-box .score-static-item .meta {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #71777d;
+}
+.course-infos .extra {
+    position: absolute;
+    right: 24px;
+    bottom: 32px;
+    color: #fff;
+}
+.share-rl-tips {
+    width: 98px;
+    display: inline-block;
+    background-color: #fffaf5;
+    color: #ff8922;
+    font-size: 12px;
+    padding: 5px 8px 5px 12px;
+}
+.course-infos .extra .share-posi {
+    position: relative;
+    right: -47px;
+    top: 90px;
+    display: block;
+}
+.course-infos .extra .share-triangle {
+    position: absolute;
+    top: -18px;
+    right: 43px;
+    font-size: 36px;
+    color: #fffaf5;
+}
+.mod-chapters .chapter h3 strong,
+.share-rl-tips strong {
+    font-weight: 700;
+}
+.course-infos .extra .share {
+    display: inline-block;
+    float: none;
+    padding: 0;
+    font-size: 24px;
+    background: rgba(7,17,27,.4);
+    margin: 0 7px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,.4);
+    color: rgba(255,255,255,.8);
+    cursor: pointer;
+}
+.course-infos .extra .share:hover {
+    color: #FFF;
+}
+.course-infos .info-bg,
+.course-infos .info-bg .cover-img-wrap {
+    z-index: 0;
+    overflow: hidden;
+}
+.course-infos .info-bg,
+.course-infos .info-bg .cover-canvas,
+.course-infos .info-bg .cover-img-wrap,
+.course-infos .info-bg .cover-mask {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    margin-left: -50vw;
+}
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+.cover-img-wrap {
+
+}
+#js-cover-img {
+    width: 100%;
+}
+.course-infos .info-bg .cover-mask {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background: rgba(0,0,0,.8);
+}
+.progress, progress {
+    display: inline-block;
+}
+.progress {
+    background: #f0f0f0;
+    display: none;
+}
+.course-infos .progress {
+    position: absolute;
+    height: 6px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,.2);
+    margin: 0 auto;
+}
+.course-infos .progress ins {
+    position: absolute;
+    height: 6px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 0;
+    transition: 2s width;
+    background-color: #0b6fb5;
+}
+.course-info-main {
+    margin-top: 36px;
+    margin-bottom: 40px;
+}
+.course-info-main .course-brief {
+    font-size: 14px;
+    color: #4d555d;
+    line-height: 28px;
+    word-break: break-all;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.course-info-main .content .course-brief {
+    font-size: 14px;
+    color: #4d555d;
+    line-height: 28px;
+    word-break: break-all;
+}
+.course-menu {
+    border-bottom: 1px solid #D1D6DA;
+}
+.course-menu li {
+    float: left;
+    text-align: center;
+    margin-right: 12px;
+}
+.course-menu a {
+    display: block;
+    padding: 26px 24px;
+    font-size: 16px;
+    color: #4d555d;
+}
+.course-menu a.active,
+.course-menu a:hover {
+    color: #f01400;
+}
+.green-box a.active,
+.green-box a:hover {
+    color: #0b6fb5;
+}
+.mod-chapters .chapter {
+    border-bottom: 1px solid #d9dde1;
+    padding: 0 24px 12px;
+}
+.mod-chapters .chapter h3 {
+    position: relative;
+    height: 53px;
+    line-height: 65px;
+    font-size: 16px;
+    color: #07111b;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0;
+}
+.mod-chapters .chapter h3 span {
+    position: relative;
+    right: -6px;
+    float: right;
+    font-size: 24px;
+    height: 65px;
+    line-height: 65px;
+    color: #93999f;
+}
+.mod-chapters .chapter strong {
+    display: block;
+    white-space: nowrap;
+    margin-right: 20px;
+    text-overflow: ellipsis;
+}
+.mod-chapters .chapter h3 i {
+    margin-right: 5px;
+    color: #93999f;
+    font-size: 24px;
+    position: relative;
+    top: 4px;
+}
+.mod-chapters .chapter h3 .chapter-info {
+    position: relative;
+    top: 2px;
+    line-height: 16px;
+    font-size: 16px;
+    color: #d9dde1;
+    max-width: 300px;
+    display: inline-block;
+}
+.mod-chapters .chapter h3 .chapter-info:hover .triangle {
+    display: block;
+}
+.mod-chapters .chapter h3 .chapter-info .triangle {
+    display: none;
+    position: absolute;
+    top: 2px;
+    left: -14px;
+    color: #4d555d;
+    font-size: 46px;
+    z-index: 2;
+}
+.mod-chapters .chapter h3 .chapter-info .chapter-introubox {
+    position: absolute;
+    background: #4d555d;
+    color: #fff;
+    top: 24px;
+    z-index: 1;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 8px 16px;
+    box-shadow: 0 4px 8px rgba(7,17,27,.1);
+}
+.mod-chapters .chapter h3 .chapter-info .chapter-introubox .chapter-content {
+    max-width: 360px;
+    white-space: pre;
+    word-wrap: break-word;
+}
+.mod-chapters .chapter .video {
+    padding: 0 0 4px 32px;
+}
+.mod-chapters .chapter ul {
+    display: none;
+    margin-top: 0;
+}
+.mod-chapters .chapter.chapter-active ul {
+    display: block;
+    margin-top: 10px;
+}
+.mod-chapters .chapter .video li {
+    position: relative;
+    min-height: 24px;
+    line-height: 1.5;
+    padding: 8px 10px;
+    background-color: #f3f5f7;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.mod-chapters .chapter .video li a {
+    display: block;
+}
+.mod-chapters .chapter .video li:hover {
+    background: #2b333b;
+}
+.mod-chapters .chapter .video li:hover a {
+    color: #fff !important;
+}
+.mod-chapters .chapter .video li:last-child {
+    border: none;
+}
+.laststudy {
+    color: #0b6fb5;
+    font-size: 12px;
+    position: absolute;
+    right: 35px;
+    top: 0;
+}
+.mod-chapters .chapter em {
+    float: right;
+    font-size: 12px;
+    cursor: default;
+}
+.mod-chapters .chapter .laststudy,
+.mod-chapters .chapter .new {
+    color: #93999f;
+    font-size: 12px;
+    position: absolute;
+    right: 35px;
+    top: 8px;
+}
+.mod-chapters .chapter .video li:hover .laststudy {
+    color: #fff;
+}
+.mb40 {
+    margin-bottom: 40px;
+}
+.mb40 {
+    margin-bottom: 28px;
+    padding: 0 0 24px;
+    border-bottom: 1px solid #d9dde1;
+}
+.course-info-main .aside h4 {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+.course-info-main .aside .teacher-info {
+    padding: 24px 0 20px 80px;
+    overflow: hidden;
+}
+.course-info-main .aside .teacher-info img {
+    float: left;
+    margin-left: -80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.course-info-main .aside .teacher-info .tit {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.course-info-main .aside .teacher-info .tit a {
+    font-weight: 700;
+    color: #07111b;
+}
+.course-info-main .aside .teacher-info .icon-imooc {
+    color: #f01400;
+    font-size: 16px;
+    margin: 0 0 0 8px;
+    vertical-align: -2px;
+}
+.course-info-main .aside .teacher-info .job {
+    font-size: 12px;
+    color: #71777b;
+}
+.course-info-tip {
+    position: relative;
+    padding: 24px;
+    background-color: #edf1f2;
+    color: #4d555d;
+    margin-bottom: 12px;
+}
+.course-info-tip dl.first {
+    margin-bottom: 24px;
+}
+.course-info-tip dt {
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.course-info-tip dd {
+    font-size: 12px;
+    line-height: 24px;
+    white-space: pre-line;
+}
+/*.all-attention-box {
+    padding: 0 0 24px 24px!important;
+}*/
+.js-all-attention {
+    padding: 30px 0 10px;
+}
+.course-info-tip:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 0 none;
+    border-bottom-color: #edf1f2;
+}
+.all-attention a {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #FFF;
+    border-radius: 3px;
+    font-weight: 400;
+}
+.all-attention .normal {
+    font-weight: 400;
+}
+.all-attention .orange {
+    background-color: #f63
+}
+.all-attention .orange:hover {
+    background-color: rgba(255,102,51,.8)
+}
+.all-attention .green {
+    background-color: #00b43c
+}
+.all-attention .green:hover {
+    background-color: rgba(0,180,60,.8)
+}
+.all-attention .blue {
+    background-color: #008cc8
+}
+.all-attention .blue:hover {
+    background-color: rgba(0,140,200,.8)
+}
+.all-attention .lake-blue {
+    background-color: #0cc
+}
+.all-attention .lake-blue:hover {
+    background-color: rgba(0,204,204,.8)
+}
+.all-attention .yellow {
+    background-color: #f93
+}
+.all-attention .yellow:hover {
+    background-color: rgba(255,153,51,.8)
+}
+.all-attention .fz20 {
+    font-size: 20px
+}
+.all-attention .fz14 {
+    font-size: 14px
+}
+.all-attention .fz16 {
+    font-size: 16px
+}
+.all-attention .fz18 {
+    font-size: 18px
+}
+.all-attention .bold {
+    font-weight: 700
+}
+.all-attention .normal {
+    font-weight: 400
+}
+#notice a.close,
+#notice strong,
+.course-menu a,
+.exp-progress .exp-per,
+.exp-progress .exp-time,
+.pop-notice .pop-close,
+.pop-notice dt,
+.share-rl-tips strong {
+    font-weight: 700
+}
+
+/* 笔记模块 */
+.mod-post .post-row {
+    border-bottom: 1px solid #d9dde1;
+    overflow: hidden;
+    padding: 24px 0 16px 24px;
+}
+.mod-post .post-row .media {
+    float: left;
+    width: 40px;
+    margin-right: 10px;
+}
+.mod-post .post-row .media img {
+    display: block;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+}
+.mod-post .post-row .bd {
+    margin-left: 60px;
+    margin-right: 20px;
+}
+.mod-post .post-row .tit {
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+.mod-post .post-row .tit a {
+    font-size: 14px;
+    color: #4d555d;
+    font-weight: 700;
+}
+.notelist-content {
+    position: relative;
+    max-height: 168px;
+    line-height: 28px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #4d555d;
+}
+.notelist-content .autowrap {
+    white-space: pre-wrap;
+}
+.notelist-content-more {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    height: 28px;
+    line-height: 28px;
+    background-color: #fff;
+}
+.notelist-content-more a {
+    font-size: 12px;
+    color: #999;
+}
+.post-row .sava_btn {
+    display: none;
+    float: right;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
+}
+.answercon {
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.answercon .answerImg {
+    float: left;
+    position: relative;
+}
+.answercon img {
+    overflow: hidden;
+    float: left;
+    cursor: pointer;
+    height: 160px;
+}
+.answercon .answerImg i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 5px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    z-index: 1;
+    background-color: rgba(0,0,0,.4);
+}
+.hover-area {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.hover-area:hover .catch-pic {
+    margin-left: 0;
+}
+.hover-area:hover .catch-video {
+    margin-right: 0;
+}
+.hover-area a, .hover-area span {
+    height: 100%;
+    line-height: 160px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.hover-area a {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.hover-area .slider-door {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    color: #fff;
+    line-height: 160px;
+    text-align: center;
+    z-index: 2;
+}
+.hover-area .catch-pic {
+    left: 0;
+    margin-left: -50%;
+    background: rgba(0,0,0,.5)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000, endcolorstr=#7F000000);
+}
+.hover-area .catch-video {
+    right: 0;
+    margin-right: -50%;
+    background: rgba(0,0,0,.3)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#4C000000, endcolorstr=#4C000000);
+}
+.hover-area a, .hover-area span {
+    height: 100%;
+    line-height: 88px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.mod-post .post-row .footer {
+    color: #93999f;
+    font-size: 12px;
+    margin-top: 15px;
+}
+.mod-post .post-row .from {
+    color: #93999f;
+    font-size: 12px;
+    margin-left: 28px;
+}
+.mod-post pre {
+    display: block;
+    padding: 10px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+}
+
+/* 回答模块 */
+.mod-qa-list {
+    padding: 20px 0;
+    border-bottom: 1px solid #d9dde1;
+    overflow: hidden;
+}
+.mod-qa-list .qa-medias {
+    width: 96px;
+    overflow: hidden;
+    text-align: center;
+}
+.mod-qa-list .qa-medias img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.mod-qa-list .qa-content {
+    padding-right: 20px;
+    min-height: 85px;
+    position: relative;
+    overflow: hidden;
+}
+.mod-qa-list .qa-header {
+    font-size: 14px;
+    line-height: 20px;
+    color: #363d40;
+    position: relative;
+    margin: 15px auto 30px;
+}
+.mod-qa-list .qa-header .name,
+.mod-qa-list .qa-header .qa-tit,
+.replydes {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.mod-qa-list .qa-header .name {
+    display: block;
+    max-width: 100%;
+    color: #93999f;
+    font-size: 14px;
+    line-height: 14px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.mod-qa-list .qa-header .qa-tit {
+    font-size: 16px;
+    font-weight: 700;
+    color: #14191e;
+    line-height: 24px;
+}
+.replycont {
+    margin-top: 10px;
+    position: relative;
+}
+.replydes, .replydes .nickname,
+.replydes .replysign {
+    font-size: 14px;
+    line-height: 22px;
+}
+.replydes {
+    color: #4d555d;
+    overflow: hidden;
+}
+.replydes .nickname {
+    font-weight: 700;
+}
+.replydes .praise,
+.replydes .praise .nickname {
+    color: #a2a8af;
+}
+.mod-qa-list .qa-footer {
+    margin-top: 12px;
+    color: #93999f;
+    font-size: 12px;
+}
+.mod-qa-list .qa-footer .l-box em {
+    font-style: normal;
+    display: inline-block;
+}
+.mod-qa-list .qa-footer .l-box a {
+    color: #93999f;
+    margin-left: 30px;
+}
+.mod-qa-list .qa-footer .static-count {
+    font-size: 12px;
+    color: #93999f;
+}
+.mod-qa-list .qa-footer .static-count .static-item {
+    display: inline-block;
+}
+.mod-qa-list .qa-footer .static-count .static-item.answer {
+    margin-right: 26px;
+}
+.replydes .myanswer {
+    display: inline-block;
+    padding: 5px 16px;
+    background-color: #FFF;
+    color: #337ab7;
+    border: 1px solid #337ab7;
+}
+.replydes .myanswer:hover {
+    color: #FFF;
+    background-color: #337ab7;
+}
+
+@media (max-width: 992px) {
+    .course-infos .extra {
+        display: block;
+        overflow: hidden;
+        top: 15px;
+        right: 0;
+        bottom: initial;
+    }
+    .course-infos .extra .share-action {
+        float: left;
+    }
+    .course-infos .extra .share {
+        margin: 0 0 0 14px;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .course-infos .w {
+        z-index: 1;
+        padding: 70px 0 40px;
+    }
+}
+@media (max-width: 730px) {
+    .mod-qa-list .wenda-time .l-box {
+        float: initial;
+        margin-bottom: 5px;
+    }
+    .mod-qa-list .qa-footer .static-count {
+        display: block;
+        float: initial;
+    }
+
+}
+@media (max-width: 616px) {
+    .mod-post .post-row .timeago {
+        display: block;
+        float: initial;
+    }
+    .mod-post .post-row .from,
+    .mod-qa-list .wenda-time .l-box a {
+        display: block;
+        margin: 0;
+    }
+    .mod-chapters .chapter h3 .chapter-info {
+        display: none;
+    }
+    .course-menu a {
+        padding: 22px 12px;
+    }
+    .course-infos .statics .static-item {
+        display: none;
+    }
+    .mod-chapters .chapter {
+        padding: 0 0 12px;
+    }
+}
+.J-media-item > i {
+    color: #c3c3c3;
+}

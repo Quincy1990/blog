@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<title>K12</title>
+
+	<meta property="og:url" content="" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+
+	<link rel="stylesheet" media="all" href="/static/css/reset.css">
+	<link rel="stylesheet" media="all" href="/static/css/common.css">
+	<link rel="stylesheet" media="all" href="/static/libs/bootstrap/3.3.7/css/bootstrap.css">
+
+	<link rel="stylesheet" media="all" href="/static/page/exam/exam.css">
+	<script type="text/javascript" src="/static/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=62952352" charset="UTF-8"></script>
+</head>
+<body>
+	<div id="main">
+		<div class="container">
+			<div id="exam-introduction" class="exam-page exam-introduction clearfix col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="row mb30">
+					<div class="pt60 pb20 f20 tc">
+						<div>
+							您好，用户昵称！欢迎参加<span style="color: rgb(0, 158, 231); display: inline;" data-link="visible{:examName}">《考试名称》</span>
+						</div>
+					</div>
+				</div>
+				<div class="row mb30">
+					<div data-link="visible{:paperGuide}" style="display: block;">
+		                <h4 class="mb10">试卷说明：</h4>
+		                <div class="sets-question-item paper pt20 pb20 pl30 pr30">
+			                <pre id="exam-paper-guide">试卷说明内容</pre>
+		                </div>
+	                </div>
+				</div>
+				<div class="row mb50">
+					<div class="mb20">
+						<h4 class="mb10">注意事项：</h4>
+						<ul class="notice">
+							<li>答题过程中系统自动计时、自动保存答案，到时自动交卷；</li>
+							<li class="red">考试前请关闭其他浏览器窗口，关闭可能弹窗的应用如QQ、屏保等，考试中不要切换到考试窗口之外的区域；</li>
+							<li>如果答题过程中因电源、网络故障等造成中断，请退出并在几分钟之内再次按照相同的步骤进入考试，从中断处继续答题；</li>
+							<li>Sogou、360浏览器请用极速模式，如果出现异常无法答题请换一种浏览器；</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mb30">
+					<div class="tc">
+						<button id="btn-introduction" type="button" class="btn btn-primary" data-link="class{merge:(callServer==true) toggle='disabled'} disabled{:callServer==true}">我知道了</button>
+					</div>
+				</div>
+			</div>
+			<div id="exam-examing" class="exam-page exam-introduction clearfix col-lg-12 col-md-12 col-sm-12 col-xs-12 none">
+				<div id="exam-banner">
+					<div class="exam-time">
+						<p class="exam-tip"></p>
+						<p class="exam-countdown"></p>
+					</div>
+					<div class="exam-banner-wrap">
+						<h1 class="exam-banner-title">Java SSM开发大众点评后台及项目实战</h1>
+						<div class="statics clearfix">
+							<div class="static-item l">
+								<span class="meta">试卷总分</span>
+								<span class="meta-value">150分</span>
+								<em></em>
+							</div>
+							<div class="static-item l">
+								<span class="meta">考试时长</span>
+								<span class="meta-value">70分钟</span>
+								<em></em>
+							</div>
+							<div class="static-item l">
+								<span class="meta">题目数</span>
+								<span class="meta-value">120题</span>
+								<em></em>
+							</div>
+						</div>
+					</div>
+					<img src="/static/images/exam/banner.jpg">
+				</div>
+				<div class="questionContainer container">
+					<div style="display: block;">
+						<div class="row">
+							<div class=" questionInfo">
+								<label class="question-type">单选题</label>
+								<label class="question-point">(1分)</label>
+								<label class="question-index"><span class="numb_index">6</span>/<span class="numb_total">120</span></label>
+							</div>
+						</div>
+						<div class="select">
+							<div class="row">
+								<div class="question-title">该页面是通过（  ）来计算出时间的。</div>
+							</div>
+							<div class="row">
+								<div class="">
+									<div class="option focus">
+										<label class="radio-inline sets-radio">
+											<span class="question-option fa-stack radio-icon">
+												<i class="icon-radiobxo_o"></i>
+												<i class="icon-radiobox"></i>
+												<input type="radio" name="option" class="radioOption" value="A">
+											</span>
+											<span class="option-index">A</span>
+											<div class="question-option-label">选项A</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="">
+									<div class="option">
+										<label class="radio-inline sets-radio">
+											<span class="question-option fa-stack radio-icon">
+												<i class="icon-radiobxo_o"></i>
+												<i class="icon-radiobox"></i>
+												<input type="radio" name="option" class="radioOption" value="B">
+											</span>
+											<span class="option-index">B</span>
+											<div class="question-option-label">选项B</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="">
+									<div class="option">
+										<label class="radio-inline sets-radio">
+											<span class="question-option fa-stack radio-icon">
+												<i class="icon-radiobxo_o"></i>
+												<i class="icon-radiobox"></i>
+												<input type="radio" name="option" class="radioOption" value="C">
+											</span>
+											<span class="option-index">C</span>
+											<div class="question-option-label">选项C</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="">
+									<div class="option">
+										<label class="radio-inline sets-radio">
+											<span class="question-option fa-stack radio-icon">
+												<i class="icon-radiobxo_o"></i>
+												<i class="icon-radiobox"></i>
+												<input type="radio" name="option" class="radioOption" value="D">
+											</span>
+											<span class="option-index">D</span>
+											<div class="question-option-label">选项D</div>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end 题目容器-->
+				<div class="examOperate container">
+					<button id="exam-prev-btn" type="button" class="btn btn-default exam-prev-btn first disabled">上一题</button>
+					<button type="button" class="btn btn-primary exam-next-btn last">下一题</button>
+					<button type="button" class="btn btn-answer-doubt">标记本题</button>
+					<button type="button" class="btn btn-answer-send">提交试卷</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="listening-leave-wrap" class="listening-leave-wrap none">
+		<div id="exam-listeningLeave">
+			<div class="exam-listeningLeave-model"></div>
+			<div class="exam-listeningLeave-content">
+				<div class="remind">您已离开页面<span>1</span>次</div>
+				<div class="remind_text">
+					离开页面超过<span>5次 </span>将不能继续考试，且离开次数将会呈现在您的测试报告中。<br>
+					为了避免影响您的成绩，请谨慎作答！<br>
+					<button type="button" class="continueAnswer btn btn-primary mt20">知道了，继续答题</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="exam-part-progress" class="exam-part-progress none">
+		<div class="questionModal"></div>
+		<div id="exam-questionProgress-wrap" class="questionProgress">
+			<!-- 试卷部分信息  -->
+			<div class="container">
+				<div id="exam-questionProgress">
+					<div class="part_list">
+						<ul class="partList p0" data-jsv-df="">
+							<li><button class="part part_now">选择题</button></li>
+							<li><button class="part">填空题</button></li>
+							<li><button class="part">判断题</button></li>
+						</ul>
+					</div>
+				</div>
+				<div class="question-panels" id="panel0" style="display: block;">
+					<div class="qnumb_qums">
+						<i>当前部分包含以下题目：</i>
+						<ul data-jsv-df="">
+							<li><button type="button" class="qnum btn btn-default btn-success">1</button></li>
+							<li><button type="button" class="qnum btn btn-default btn-success">2</button></li>
+							<li><button type="button" class="qnum btn btn-default btn-success">3</button></li>
+							<li><button type="button" class="qnum btn btn-default btn-success">4</button></li>
+							<li><button type="button" class="qnum btn btn-default btn-success">5</button></li>
+							<li><button type="button" class="qnum btn btn-default now">6</button></li>
+							<li><button type="button" class="qnum btn btn-default">7</button></li>
+							<li><button type="button" class="qnum btn btn-default">8</button></li>
+							<li><button type="button" class="qnum btn btn-default">9</button></li>
+							<li><button type="button" class="qnum btn btn-default">10</button></li>
+							<li><button type="button" class="qnum btn btn-default">11</button></li>
+							<li><button type="button" class="qnum btn btn-default">12</button></li>
+							<li><button type="button" class="qnum btn btn-default">13</button></li>
+							<li><button type="button" class="qnum btn btn-default">14</button></li>
+							<li><button type="button" class="qnum btn btn-default">15</button></li>
+							<li><button type="button" class="qnum btn btn-default">16</button></li>
+							<li><button type="button" class="qnum btn btn-default">17</button></li>
+							<li><button type="button" class="qnum btn btn-default">18</button></li>
+							<li><button type="button" class="qnum btn btn-default">19</button></li>
+							<li><button type="button" class="qnum btn btn-default">20</button></li>
+							<li><button type="button" class="qnum btn btn-default">21</button></li>
+							<li><button type="button" class="qnum btn btn-default">22</button></li>
+							<li><button type="button" class="qnum btn btn-default">23</button></li>
+							<li><button type="button" class="qnum btn btn-default">24</button></li>
+							<li><button type="button" class="qnum btn btn-default">25</button></li>
+							<li><button type="button" class="qnum btn btn-default">26</button></li>
+							<li><button type="button" class="qnum btn btn-default">27</button></li>
+							<li><button type="button" class="qnum btn btn-default">28</button></li>
+							<li><button type="button" class="qnum btn btn-default">29</button></li>
+							<li><button type="button" class="qnum btn btn-default">30</button></li>
+							<li><button type="button" class="qnum btn btn-default">31</button></li>
+							<li><button type="button" class="qnum btn btn-default">32</button></li>
+							<li><button type="button" class="qnum btn btn-default">33</button></li>
+							<li><button type="button" class="qnum btn btn-default">34</button></li>
+							<li><button type="button" class="qnum btn btn-default">35</button></li>
+							<li><button type="button" class="qnum btn btn-default">36</button></li>
+						</ul>
+						<div style="clear:both;">
+						</div>
+						<div class="common-pane mt20">
+							<button type="button" class="btn btn-primary exam-submit-paper-btn last">提交试卷</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="exam-over-wrap" class="exam-over-wrap none">
+		<div id="exam-over">
+			<div class="exam-over-model"></div>
+			<div class="exam-over-content shadow">
+				<div class="title">
+					<p>答题已结束，感谢您的参加</p>
+				</div>
+				<div class="user-avatar"><img src="/static/images/avatar/avatar01.png"></div>
+				<p class="user-name">用户昵称</p>
+				<p class="user-exam-all">本次考试共用时<span class="num">5</span>分钟，共答<span class="num">120</span>道题。</p>
+				<div class="over-btn">
+					<button type="button" class="btn btn-over-close">关闭页面</button>
+				</div>
+				<div class="over-tips">老师批卷完毕后会通过邮件及站内信通知您，请及时查看！</div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="/static/component/config/config.js"></script>
+	<script type="text/javascript" src="/static/component/common/common.js"></script>
+	<script type="text/javascript" src="/static/component/common/header.js"></script>
+	<script type="text/javascript" src="/static/component/common/footer.js"></script>
+	
+	<script type="text/javascript" src="/static/page/exam/exam.js"></script>
+	<script>var _mtac = {};(function() {var mta = document.createElement("script");mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";mta.setAttribute("name", "MTAH5");mta.setAttribute("sid", "500485725");var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(mta, s);})();</script>
+</body>
+</html>

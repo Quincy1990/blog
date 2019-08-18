@@ -1,0 +1,27 @@
+var elevator = '';
+var elevator = simpleTpl();
+elevator._('<div id="J_GotoTop" class="elevator">')
+    ._('<a href="" class="elevator-msg" target="_blank">')
+        ._('<i class="icon-feedback"></i>')
+        ._('<span class="">意见反馈</span>')
+    ._('</a>')
+    ._('<a href="" class="elevator-faq" target="_blank">')
+        ._('<i class="icon-ques"></i>')
+        ._('<span class="">常见问题</span>')
+    ._('</a>')
+    ._('<a href="mobile.html" target="_blank" class="elevator-app">')
+        ._('<i class="icon-appdownload"></i>')
+        ._('<span class="">APP下载</span>')
+        ._('<div class="elevator-app-box"></div>')
+    ._('</a>')
+    ._('<a href="javascript:void(0)" class="elevator-weixin" id="js-elevator-weixin">')
+        ._('<i class="icon-wxgzh"></i>')
+        ._('<span class="">官方微信</span>')
+        ._('<div class="elevator-weixin-box"></div>')
+    ._('</a>')
+    ._('<a href="javascript:void(0)" class="elevator-top no-goto" style="" id="backTop">')
+        ._('<i class="icon-up2"></i>')
+        ._('<span class="">返回顶部</span>')
+    ._('</a>')
+._('</div>');
+$('#main').append(elevator.toString());

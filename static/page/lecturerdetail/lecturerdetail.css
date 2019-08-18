@@ -1,0 +1,90 @@
+#canvasWave {
+	position: absolute;
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.lecturer-intro {
+	margin-top: 90px;
+	padding: 0 15px;
+	text-align: center;
+}
+.lecturer-intro-avatar {
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	border: 5px solid rgba(0,0,0,.1);
+	margin-bottom: 20px;
+}
+.lecturer-intro-avatar img {
+	max-width: 100%;
+}
+.lecturer-intro-name {
+	font-size: 24px;
+	color: #333;
+}
+.lecturer-intro-school {
+	font-size: 16px;
+	color: #666;
+}
+.lecturer-intro-share {
+	margin: 0 auto 50px;
+}
+.share-content .share {
+	background: transparent;
+	color: #ddd;
+	border-color: #ddd;
+	border-width: 1px;
+	margin: 30px 13px;
+}
+.share-content .share:hover {
+	background: #3498db;
+	border-color: #3498db;
+}
+.lecturer-intro-share .share {
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+}
+.lecturer-intro-detail {
+	font-size: 14px;
+	color: #999;
+	width: 60%;
+	margin: 0 auto 80px;
+	line-height: 1.8;
+}
+.lecturer-intro-data {
+	margin-bottom: 90px;
+}
+.lecturer-intro-data .static-item {
+    display: inline-block;
+    position: relative;
+    padding: 0 36px;
+    height: 48px;
+    font-size: 12px;
+    top: 6px;
+}
+.lecturer-intro-data .static-item .meta {
+    display: block;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    line-height: 12px;
+    font-size: 12px;
+    color: #666;
+}
+.lecturer-intro-data .static-item .meta-value {
+    display: block;
+    margin-bottom: 10px;
+    opacity: .7;
+    font-size: 28px;
+    line-height: 32px;
+    color: #333;
+    filter: alpha(opacity=70);
+}
